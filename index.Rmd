@@ -11,7 +11,7 @@ lot: yes
 lof: yes
 geometry: [b5paper, tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm]
 site: bookdown::bookdown_site
-description: "一个简单的中文书示例。"
+description: "書籍描述。"
 github-repo: jimewu/bookdown-chinese
 #cover-image: images/cover.jpg
 ---
@@ -22,28 +22,30 @@ options(
 )
 
 pkg_lst <- c(
-    "knitr",
-    "readODS",
-    "dplyr",
-    "flextable",
-    "officedown",
-    "officer"
+  "knitr",
+  "readODS",
+  "dplyr",
+  "flextable",
+  "officedown",
+  "officer"
 )
 
 # 填上你需要用到的包，如 c('ggplot2', 'dplyr')
 lapply(pkg_lst, function(pkg) {
-  if (system.file(package = pkg) == '') install.packages(pkg)
+  if (system.file(package = pkg) == "") install.packages(pkg)
+
+  library(pkg, character.only = TRUE)
 })
+
+source("toolkit/lib_officeverse.r")
 ```
 
 # 前言 {-}
 
-以下是我的 R 进程信息：
+R Session Information：
 
 ```{r}
 sessionInfo()
 ```
-
-## 致谢 {-}
 
 
