@@ -144,7 +144,7 @@ fp_underline <- fp_text_lite(underlined = TRUE)
 width_ratio <- function(
   x,
   width_col_ratio,
-  width_visible = 5.764
+  width_visible = 7
 ) {
   result <-
     width_col_ratio * width_visible / sum(width_col_ratio)

@@ -1,5 +1,5 @@
 --- 
-title: 
+title: 當自己的教練 - 問題和解決方式
 author: 
 date: "`r Sys.Date()`"
 documentclass: ctexbook
@@ -31,11 +31,12 @@ pkg_lst <- c(
 )
 
 # 填上你需要用到的包，如 c('ggplot2', 'dplyr')
-lapply(pkg_lst, function(pkg) {
+
+for (pkg in pkg_lst) {
   if (system.file(package = pkg) == "") install.packages(pkg)
 
   library(pkg, character.only = TRUE)
-})
+}
 
 source("toolkit/lib_officeverse.r")
 ```
