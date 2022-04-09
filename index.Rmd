@@ -1,5 +1,5 @@
 --- 
-title: 當自己的教練 - 問題和解決方式
+title: 本書標題
 author: 
 date: "`r Sys.Date()`"
 documentclass: ctexbook
@@ -11,7 +11,7 @@ lot: yes
 lof: yes
 geometry: [b5paper, tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm]
 site: bookdown::bookdown_site
-description: "書籍描述。"
+description: "本書描述"
 github-repo: jimewu/bookdown-chinese
 #cover-image: images/cover.jpg
 ---

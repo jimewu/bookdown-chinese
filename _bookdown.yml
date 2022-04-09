@@ -2,7 +2,7 @@ book_filename: bookdown
 clean: [packages.bib, bookdown.bbl]
 language:
   label:
-    fig: "图 "
+    fig: "圖 "
     tab: "表 "
   ui:
     edit: "编辑"
